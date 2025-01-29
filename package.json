@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@fastify/cookie": "^11.0.2",
     "abstract-logging": "^2.0.1",
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
