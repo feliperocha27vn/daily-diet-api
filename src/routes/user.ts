@@ -1,8 +1,9 @@
 import { z } from 'zod'
 import { knex } from '../database'
 import { randomUUID } from 'node:crypto'
+import { FastifyInstance } from 'fastify'
 
-export async function dailyDietRoutes(app) {
+export async function userRoute(app: FastifyInstance) {
   app.post('/', async (request, reply) => {
     const createNewUserBodySchema = z.object({
       name: z.string(),
